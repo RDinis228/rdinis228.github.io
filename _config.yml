@@ -9,7 +9,7 @@
 title: Блог
 email: https://github.com/RDinis228
 description:  Ласкаво прошу всіх у мій блог. Даний записник створений для того, щоб допомогти аматорам розібратися з фреймворком Jekyll, та навчити їх створювати свої власні проекти.
-baseurl: "/jekyll-wing-template" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://github.com/RDinis228" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
