@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="home">
+ <div class="top card">
+    <a class="email" href="{{site.email}}">{{site.email}}</a>
+    <p class="description">{{ site.description }}</p>
+    <a href="about" class="btn">Про мене</a>
+  </div>
+  
+  <div class="posts card">
+      <div class="card-content white-text">
+      <span class="card-title">Записи</span>
+
+      <ul class="post-list">
+        {% for post in paginator.posts %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>            
+          </li>
+        {% endfor %}
+      </ul>
+	  
+	  <hr>
+
+	  
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Назад</a>
+  {% else %}
+    <span>&laquo; Назад</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Вперед &raquo;</a>
+  {% else %}
+    <span>Вперед &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+	  
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div>
+   </div>
+
+</div>
