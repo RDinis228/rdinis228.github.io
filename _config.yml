@@ -9,7 +9,8 @@ collections:
     title: Uploads
     output: true
 email: https://github.com/RDinis228
-description: В даному блозі присутня інформація про те, як створити свій власний сайт за допомогою Jekyll, а також як помістити його в репозиторій Github.
+description: В даному блозі присутня інформація про те, як створити свій власний сайт
+  за допомогою Jekyll, а також як помістити його в репозиторій Github.
 baseurl: https://rdinis228.github.io/
 url: https://github.com/RDinis228
 twitter_username: jekyllrb
