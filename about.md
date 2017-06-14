@@ -4,4 +4,4 @@ permalink: "/about/"
 layout: page
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Романюк Дініс Віталійович, студент 4-го курсу Черкаського Політехнічного технікуму, навчаюсь в сфері програмування, проходив виробничу практику і готовий до серйозної роботи.
